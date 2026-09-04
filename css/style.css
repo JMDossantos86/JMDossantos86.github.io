@@ -771,11 +771,6 @@ nav {
         color var(--transition);
 }
 
-/* IMPORTANT
-   The logo box is ALWAYS exactly 18 x 18 px.
-   No responsive rule changes this size.
-*/
-
 .microsoft-skill img {
     display: block;
 
@@ -841,8 +836,6 @@ nav {
         color var(--transition);
 }
 
-/* EXACTLY THE SAME SIZE AS MICROSOFT ICONS */
-
 .development-skill img {
     display: block;
 
@@ -862,6 +855,71 @@ nav {
 }
 
 .development-skill:hover {
+    transform: translateY(-2px);
+
+    background: rgba(255, 255, 255, 0.08);
+
+    border-color: var(--accent);
+
+    color: var(--white);
+}
+
+
+/* =========================================================
+   DATA & INTEGRATION TECHNOLOGIES
+========================================================= */
+
+.data-integration-skill-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+}
+
+.data-integration-skill {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    min-width: 0;
+
+    padding: 9px 12px;
+
+    border: 1px solid var(--border-dark);
+    border-radius: 4px;
+
+    background: rgba(255, 255, 255, 0.035);
+
+    font-size: 12px;
+
+    color: rgba(255, 255, 255, 0.72);
+
+    transition:
+        transform var(--transition),
+        background var(--transition),
+        border-color var(--transition),
+        color var(--transition);
+}
+
+.data-integration-skill img {
+    display: block;
+
+    width: 18px;
+    height: 18px;
+
+    min-width: 18px;
+    min-height: 18px;
+
+    max-width: 18px;
+    max-height: 18px;
+
+    flex: 0 0 18px;
+
+    object-fit: contain;
+    object-position: center;
+}
+
+.data-integration-skill:hover {
     transform: translateY(-2px);
 
     background: rgba(255, 255, 255, 0.08);
@@ -1127,8 +1185,6 @@ footer {
         padding: 8px 10px;
     }
 
-    /* KEEP ICONS EXACTLY 18px */
-
     .microsoft-skill img {
         width: 18px;
         height: 18px;
@@ -1153,9 +1209,31 @@ footer {
         padding: 8px 10px;
     }
 
-    /* KEEP ICONS EXACTLY 18px */
-
     .development-skill img {
+        width: 18px;
+        height: 18px;
+
+        min-width: 18px;
+        min-height: 18px;
+
+        max-width: 18px;
+        max-height: 18px;
+
+        flex: 0 0 18px;
+    }
+
+
+    /* DATA & INTEGRATION TECHNOLOGIES */
+
+    .data-integration-skill-list {
+        gap: 8px;
+    }
+
+    .data-integration-skill {
+        padding: 8px 10px;
+    }
+
+    .data-integration-skill img {
         width: 18px;
         height: 18px;
 
@@ -1381,8 +1459,6 @@ footer {
         font-size: 11px;
     }
 
-    /* KEEP ICONS EXACTLY 18px */
-
     .microsoft-skill img {
         width: 18px;
         height: 18px;
@@ -1412,9 +1488,36 @@ footer {
         font-size: 11px;
     }
 
-    /* KEEP ICONS EXACTLY 18px */
-
     .development-skill img {
+        width: 18px;
+        height: 18px;
+
+        min-width: 18px;
+        min-height: 18px;
+
+        max-width: 18px;
+        max-height: 18px;
+
+        flex: 0 0 18px;
+    }
+
+
+    /* =====================================================
+       DATA & INTEGRATION TECHNOLOGIES
+    ===================================================== */
+
+    .data-integration-skill-list {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 8px;
+    }
+
+    .data-integration-skill {
+        padding: 8px 9px;
+        gap: 8px;
+        font-size: 11px;
+    }
+
+    .data-integration-skill img {
         width: 18px;
         height: 18px;
 
