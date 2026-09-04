@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" role="img" aria-labelledby="title desc">
+  <title id="title">CTI</title>
+  <desc id="desc">Computer Telephony Integration icon with telephone handset and connection nodes</desc>
+  <g fill="none" stroke="blue" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M16.2 11.5c1.3-1.3 3.4-1.3 4.7 0l3.1 3.1c1.3 1.3 1.3 3.4 0 4.7l-2.1 2.1c1.8 3.6 4.7 6.5 8.3 8.3l2.1-2.1c1.3-1.3 3.4-1.3 4.7 0l3.1 3.1c1.3 1.3 1.3 3.4 0 4.7l-1.8 1.8c-1.7 1.7-4.3 2.3-6.5 1.4C20.1 34.1 13.9 27.9 9.5 16.2c-.9-2.2-.3-4.8 1.4-6.5z"/>
+    <path d="M31 9h8v8"/>
+    <path d="M39 9 29 19"/>
+    <circle cx="39" cy="9" r="2" fill="limegreen" stroke="none"/>
+    <circle cx="29" cy="19" r="2" fill="limegreen" stroke="none"/>
+  </g>
+</svg>
