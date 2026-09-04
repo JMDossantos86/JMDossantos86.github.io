@@ -1355,3 +1355,133 @@ footer {
         animation: none !important;
     }
 }
+
+/* =========================================================
+   MICROSOFT TECHNOLOGIES
+========================================================= */
+
+.microsoft-skill-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.microsoft-skill {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    min-width: 0;
+
+    padding: 9px 12px;
+
+    border: 1px solid var(--border-dark);
+    border-radius: 4px;
+
+    background: rgba(255, 255, 255, 0.035);
+
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.72);
+
+    transition:
+        transform var(--transition),
+        background var(--transition),
+        border-color var(--transition);
+}
+
+
+/* Conteneur fixe du logo */
+
+.microsoft-skill img {
+    display: block !important;
+
+    width: 18px !important;
+    height: 18px !important;
+
+    min-width: 18px !important;
+    min-height: 18px !important;
+
+    max-width: 18px !important;
+    max-height: 18px !important;
+
+    flex: 0 0 18px !important;
+
+    object-fit: contain;
+}
+
+
+/* Hover */
+
+.microsoft-skill:hover {
+    transform: translateY(-2px);
+
+    background: rgba(255, 255, 255, 0.08);
+
+    border-color: var(--accent);
+
+    color: var(--white);
+}
+
+
+/* =========================================================
+   MICROSOFT TECHNOLOGIES — TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .microsoft-skill-list {
+        gap: 8px;
+    }
+
+    .microsoft-skill {
+        padding: 8px 10px;
+    }
+
+    .microsoft-skill img {
+        width: 18px !important;
+        height: 18px !important;
+
+        min-width: 18px !important;
+        min-height: 18px !important;
+
+        max-width: 18px !important;
+        max-height: 18px !important;
+
+        flex-basis: 18px !important;
+    }
+
+}
+
+
+/* =========================================================
+   MICROSOFT TECHNOLOGIES — MOBILE
+========================================================= */
+
+@media (max-width: 650px) {
+
+    .microsoft-skill-list {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+    }
+
+    .microsoft-skill {
+        padding: 8px 9px;
+        gap: 8px;
+
+        font-size: 11px;
+    }
+
+    .microsoft-skill img {
+        width: 18px !important;
+        height: 18px !important;
+
+        min-width: 18px !important;
+        min-height: 18px !important;
+
+        max-width: 18px !important;
+        max-height: 18px !important;
+
+        flex-basis: 18px !important;
+    }
+
+}
