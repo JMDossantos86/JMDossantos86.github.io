@@ -1,3 +1,4 @@
+```css
 /* =========================================================
    RESET
 ========================================================= */
@@ -897,6 +898,86 @@ nav {
 
 
 /* =========================================================
+   DEVELOPMENT TECHNOLOGIES
+========================================================= */
+
+.development-skill-list {
+    display: grid;
+
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 10px;
+}
+
+.development-skill {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    min-width: 0;
+
+    padding: 9px 12px;
+
+    border: 1px solid var(--border-dark);
+
+    border-radius: 4px;
+
+    background: rgba(255, 255, 255, 0.035);
+
+    font-size: 12px;
+
+    color: rgba(255, 255, 255, 0.72);
+
+    transition:
+        transform var(--transition),
+        background var(--transition),
+        border-color var(--transition),
+        color var(--transition);
+}
+
+
+/*
+   IMPORTANT
+   Development icons are ALWAYS exactly 18 x 18 px.
+   Same size as Microsoft technology icons.
+*/
+
+.development-skill img {
+    display: block;
+
+    width: 18px;
+    height: 18px;
+
+    min-width: 18px;
+    min-height: 18px;
+
+    max-width: 18px;
+    max-height: 18px;
+
+    flex: 0 0 18px;
+
+    object-fit: contain;
+
+    object-position: center;
+}
+
+
+/* Development technology hover */
+
+.development-skill:hover {
+    transform: translateY(-2px);
+
+    background: rgba(255, 255, 255, 0.08);
+
+    border-color: var(--accent);
+
+    color: var(--white);
+}
+
+
+/* =========================================================
    EDUCATION
 ========================================================= */
 
@@ -1160,7 +1241,9 @@ footer {
     }
 
 
-    /* MICROSOFT TECHNOLOGIES */
+    /* =====================================================
+       MICROSOFT TECHNOLOGIES
+    ===================================================== */
 
     .microsoft-skill-list {
         gap: 8px;
@@ -1176,6 +1259,37 @@ footer {
     */
 
     .microsoft-skill img {
+        width: 18px;
+        height: 18px;
+
+        min-width: 18px;
+        min-height: 18px;
+
+        max-width: 18px;
+        max-height: 18px;
+
+        flex: 0 0 18px;
+    }
+
+
+    /* =====================================================
+       DEVELOPMENT TECHNOLOGIES
+    ===================================================== */
+
+    .development-skill-list {
+        gap: 8px;
+    }
+
+    .development-skill {
+        padding: 8px 10px;
+    }
+
+    /*
+       KEEP ICONS EXACTLY 18px.
+       They do NOT grow on tablet.
+    */
+
+    .development-skill img {
         width: 18px;
         height: 18px;
 
@@ -1437,6 +1551,43 @@ footer {
 
 
     /* =====================================================
+       DEVELOPMENT TECHNOLOGIES
+    ===================================================== */
+
+    .development-skill-list {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+
+        gap: 8px;
+    }
+
+    .development-skill {
+        padding: 8px 9px;
+
+        gap: 8px;
+
+        font-size: 11px;
+    }
+
+    /*
+       KEEP ICONS EXACTLY 18px.
+       They do NOT grow on mobile.
+    */
+
+    .development-skill img {
+        width: 18px;
+        height: 18px;
+
+        min-width: 18px;
+        min-height: 18px;
+
+        max-width: 18px;
+        max-height: 18px;
+
+        flex: 0 0 18px;
+    }
+
+
+    /* =====================================================
        EDUCATION
     ===================================================== */
 
@@ -1497,3 +1648,4 @@ footer {
         animation: none !important;
     }
 }
+```
