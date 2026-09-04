@@ -798,6 +798,57 @@ nav {
     border-color: var(--accent);
 }
 
+.microsoft-skill-list {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 10px;
+}
+
+.microsoft-skill {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 10px 12px;
+
+    border: 1px solid var(--border-dark);
+
+    border-radius: 4px;
+
+    background: rgba(255, 255, 255, 0.035);
+
+    font-size: 12px;
+
+    color: rgba(255, 255, 255, 0.72);
+
+    transition:
+        transform var(--transition),
+        background var(--transition),
+        border-color var(--transition);
+}
+
+.microsoft-skill img {
+    width: 25px;
+    height: 25px;
+
+    object-fit: contain;
+
+    flex-shrink: 0;
+}
+
+.microsoft-skill:hover {
+    transform: translateY(-2px);
+
+    background: rgba(255, 255, 255, 0.08);
+
+    border-color: var(--accent);
+
+    color: var(--white);
+}
 
 /* =========================================================
    EDUCATION
@@ -1029,7 +1080,20 @@ footer {
    .hero-description {
        margin-left: auto;
        margin-right: auto;
-   }   
+   }  
+
+   .microsoft-skill-list {
+         gap: 8px;
+   }
+
+   .microsoft-skill {
+        padding: 9px 10px;
+   }
+
+   .microsoft-skill img {
+        width: 23px;
+        height: 23px;
+   }
 }
 
 
@@ -1211,7 +1275,23 @@ footer {
 
         gap: 45px;
     }
+    
+    .microsoft-skill-list {
+        grid-template-columns: repeat(2, 1fr);
 
+        gap: 8px;
+    }
+
+    .microsoft-skill {
+        padding: 9px 10px;
+
+        font-size: 11px;
+    }
+
+    .microsoft-skill img {
+        width: 22px;
+        height: 22px;
+    }
 
     /* EDUCATION */
 
